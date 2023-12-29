@@ -1,51 +1,56 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+button {
+  outline: none;
+}
+
 /* Basic Style */
 body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
-.aaa {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.header__image {
   width: 100%;
 }
-.aaa .more_inf {
+/*a добавлено чтобы применился шрифт*/
+.header__link a {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-  .aaa { 
+  .header { 
     text-align: center;
   }
 }
-.centered-main-page-element {
+.sections {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.input-task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.section-add__input {
   display: flex;
 }
-ul {
-  margin: 0;
-  padding: 0px;
-}
-li {
-  list-style: none;
-}
-input,
-button {
-  outline: none;
-}
+
 .button {
   background: none;
   border: 0px;
@@ -80,7 +85,7 @@ button {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input-task:focus {
+.input-task:focus {
   color: #333;
 }
 
